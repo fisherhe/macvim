@@ -15,7 +15,7 @@ set lines=30 columns=120
 winpos 160 5
 
 " 标签页
-set tabpagemax=15 " 最多15个标签
+set tabpagemax=10 " 最多10个标签
 set showtabline=2 " 总是显示标签栏
 
 " 隐藏工具栏
