@@ -60,7 +60,7 @@ set autochdir
 " 保留历史记录500次
 set history=500
 
-" 无需重启vim让_vimrc修改保存后自动生效 貌似没用
+" 无需重启vim让_vimrc修改保存后自动生效 貌似不完全起作用用
 if has("autocmd")
 	autocmd bufwritepost .vimrc source $MYVIMRC
 endif
