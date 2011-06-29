@@ -1,0 +1,332 @@
+#DTD
+snippet dtd-html5
+	<!DOCTYPE HTML>
+snippet dtd-xhtml10
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+snippet dtd-xhtml11
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+snippet html
+	<html>
+	${1}
+	</html>
+snippet xhtml
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	${1}
+	</html>
+snippet base
+	<base href="${1}" target="${2}"`Close()`>
+
+
+
+#head
+snippet head
+	<head>
+		${1}
+	</head>
+snippet title
+	<title>${1:`substitute(Filename('', 'Page Title'), '^.', '\u&', '')`}</title>${2}
+snippet meta
+	<meta name="${1:name}" content="${2:content}"`Close()`>${3}
+
+
+snippet zs
+	<!-- S ${1} -->
+snippet ze
+	<!-- E ${1} -->
+snippet body
+	<body>
+		${1}
+	</body>
+snippet strong
+	<strong>${1}</strong>
+snippet em
+	<em>${1}</em>
+snippet span
+	<span>${1}</span>
+snippet h1
+	<h1>${1}</h1>
+snippet h2
+	<h2>${1}</h2>
+snippet h3
+	<h3>${1}</h3>
+snippet h4
+	<h4>${1}</h4>
+snippet h5
+	<h5>${1}</h5>
+snippet h6
+	<h6>${1}</h6>
+snippet p
+	<p>${1}</p>
+snippet pc
+	<p class="">${1}</p>
+snippet nb
+	&nbsp;
+snippet a
+	<a href="#" >${1}</a>
+snippet at
+	<a target="_blank" href="#">${1}</a>
+snippet mailto
+	<a href="mailto:${1:joe@example.com}">${3:email me}</a>
+snippet hr
+	<hr />
+snippet br
+	<br />
+snippet img
+	<img src="${1}" alt="" />
+snippet div
+	<div>${1}</div>
+snippet di
+	<div id="${1}"></div>
+snippet dc
+	<div class="${1}"></div>
+snippet dic
+	<div id="${1}" class=""></div>
+snippet text
+	<input type="text" name="${1}" size="5" maxlength="5" />
+snippet checkbox
+	<input name="" type="checkbox" value="" />
+snippet radio
+	<input name="" type="radio" value="" />
+snippet sel
+	<select name="">
+		<option selected="true">${1}</option>
+	</select>
+snippet btn
+	<button>${1}</button>
+snippet lab
+	<label for="">${1}</label>
+snippet table
+	<table width="" border="0" cellspacing="0" cellpadding="0" summary="summary">
+		<caption>caption</caption>
+		<colgroup>
+			<col />
+			<col />
+			<col />
+		</colgroup>
+		<thead>
+			<tr>
+				<th>${1}</th>
+				<th></th>
+				<th></th>
+			</tr>
+		</thead>
+		<tfoot>
+		</tfoot>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		<tbody>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+snippet tb
+	<table>
+		<tr>
+			<td>${1}</td>
+			<td></td>
+		</tr>
+	</table>
+snippet th
+	<thead>
+		<th>${1}</th>
+		<th></th>
+		<th></th>
+	</thead>
+snippet tr
+	<tr>
+		<td>${1}</td>
+		<td></td>
+		<td></td>
+	</tr>
+snippet td
+	<td>${1}</td>
+snippet #
+	#${1}{
+	}
+snippet ul
+	<ul>
+		<li>${1}</li>
+		<li></li>
+		<li></li>
+	</ul>
+snippet ua
+	<ul>
+		<li><a href="${1}"></a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+	</ul>
+snippet uca
+	<ul class="${1}">
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+	</ul>
+snippet uia
+	<ul id="${1}">
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+		<li><a href=""></a></li>
+	</ul>
+}
+snippet ol
+	<ol>
+		<li>${1}</li>
+		<li></li>
+		<li></li>
+	</ol>
+snippet oa
+	<ol>
+		<li><a href="${1}" title=""></a></li>
+		<li><a href="" title=""></a></li>
+		<li><a href="" title=""></a></li>
+	</ol>
+snippet oca
+	<ol class="${1}">
+		<li><a href="" title=""></a></li>
+		<li><a href="" title=""></a></li>
+		<li><a href="" title=""></a></li>
+	</ol>
+snippet oia
+	<ol id="${1}">
+		<li><a href="" title=""></a></li>
+		<li><a href="" title=""></a></li>
+		<li><a href="" title=""></a></li>
+	</ol>
+snippet dl
+	<dl>
+		<dt>${1}</dt>
+		<dd></dd>
+	</dl>
+snippet ppbox
+	<div class="${1}">
+		<div class="hd"></div>
+		<div class="bd"></div>
+		<div class="ft"></div>
+	</div>
+snippet pptab
+	<div class="">
+		<div class="hd">
+			<ul>
+				<li><a href="#">tab</a></li>
+				<li><a href="#">tab</a></li>
+				<li><a href="#">tab</a></li>
+			</ul>
+		</div>
+		<div class="bd"></div>
+		<div class="ft"></div>
+	</div>
+
+
+
+
+snippet fieldset
+	<fieldset id="$1">
+		<legend>${1:name}</legend>
+
+		${3}
+	</fieldset>
+
+
+
+snippet form
+	<form action="${1}" method="${2:get}">
+		${3}
+	</form>
+snippet input
+	<input type="${1:text/submit/hidden/button}" name="${2:some_name}" value="${3}"`Close()`>${4}
+snippet textarea
+	<textarea name="${1:Name}" rows="${2:8}" cols="${3:40}">${4}</textarea>${5}
+
+
+
+snippet css
+	<style type="text/css" media="${1:screen}">
+		${2}
+	</style>${3}
+snippet linkcss
+	<link rel="stylesheet" href="${1}"  type="text/css" media="screen" />
+snippet js
+	<script type="text/javascript">
+		${1}
+	</script>
+snippet	js-src 
+	<script src="${1}.js" type="text/javascript"></script>${2}
+
+
+
+
+
+
+
+
+
+
+#	html.snippets	默认前50行
+# Some useful Unicode entities
+# Non-Breaking Space
+#snippet nbs
+#	&nbsp;
+# ←
+#snippet left
+#	&#x2190;
+# →
+#snippet right
+#	&#x2192;
+# ↑
+#snippet up
+#	&#x2191;
+# ↓
+#snippet down
+#	&#x2193;
+# ↩
+#snippet return
+#	&#x21A9;
+# ⇤
+#snippet backtab
+#	&#x21E4;
+# ⇥
+#snippet tab
+#	&#x21E5;
+# ⇧
+#snippet shift
+#	&#x21E7;
+# ⌃
+#snippet control
+#	&#x2303;
+# ⌅
+#snippet enter
+#	&#x2305;
+# ⌘
+#snippet command
+#	&#x2318;
+# ⌥
+#snippet option
+#	&#x2325;
+# ⌦
+#snippet delete
+#	&#x2326;
+# ⌫
+#snippet backspace
+#	&#x232B;
+# ⎋
+#snippet escape
+#	&#x238B;
+
