@@ -15,7 +15,7 @@ set lines=30 columns=120
 winpos 160 5
 
 " 标签页
-set tabpagemax=10 " 最多10个标签
+set tabpagemax=15 " 最多15个标签
 set showtabline=2 " 总是显示标签栏
 
 " 隐藏工具栏
@@ -60,7 +60,7 @@ set autochdir
 " 保留历史记录500次
 set history=500
 
-" 无需重启vim让_vimrc修改保存后自动生效 貌似不完全起作用用
+" 无需重启vim让_vimrc修改保存后自动生效 貌似没用
 if has("autocmd")
 	autocmd bufwritepost .vimrc source $MYVIMRC
 endif
@@ -226,4 +226,5 @@ snor <space> <esc>i<right><c-r>=TriggerSnippet()<cr>
 " <leader>cu 取消注释
 " 添加块注释
 " nmap <leader>f :cm<CR>
+
 
